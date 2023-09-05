@@ -11,6 +11,7 @@
 --------------------------------------------------------------*/
 :root {
   scroll-behavior: smooth;
+  --color-primary:#f27b0b;
 }
 
 body {
@@ -19,12 +20,12 @@ body {
 }
 
 a {
-  color: #4154f1;
+  color:var(--color-primary);
   text-decoration: none;
 }
 
 a:hover {
-  color: #717ff5;
+  color: #ea8e37;
   text-decoration: none;
 }
 
@@ -55,7 +56,7 @@ section {
   letter-spacing: 1px;
   font-weight: 700;
   margin: 0;
-  color: #4154f1;
+  color: #f27b0b;
   text-transform: uppercase;
 }
 
@@ -65,7 +66,7 @@ section {
   font-size: 38px;
   line-height: 42px;
   font-weight: 700;
-  color: #012970;
+  color: #000;
 }
 
 @media (max-width: 768px) {
@@ -80,7 +81,7 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
-  background: #012970;
+  background: #000;
   min-height: 40px;
   margin-top: 82px;
   color: #fff;
@@ -122,7 +123,7 @@ section {
 .breadcrumbs ol li+li::before {
   display: inline-block;
   padding-right: 10px;
-  color: #8894f6;
+  color: #f27b0b;
   content: "/";
 }
 
@@ -136,7 +137,7 @@ section {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background: #4154f1;
+  background: #f68c09;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -150,7 +151,7 @@ section {
 }
 
 .back-to-top:hover {
-  background: #6776f4;
+  background: #ed7d1b;
   color: #fff;
 }
 
@@ -188,7 +189,7 @@ section {
 }
 
 .header .logo img {
-  max-height: 40px;
+  max-height: 70px;
   margin-right: 6px;
 }
 
@@ -232,7 +233,7 @@ section {
   font-family: "Nunito", sans-serif;
   font-size: 16px;
   font-weight: 700;
-  color: #013289;
+  color: #000000;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -248,12 +249,12 @@ section {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #4154f1;
+  color: #f27b0b;
 }
 
 .navbar .getstarted,
 .navbar .getstarted:focus {
-  background: #4154f1;
+  background:#f27b0b;
   padding: 8px 20px;
   margin-left: 30px;
   border-radius: 4px;
@@ -263,7 +264,7 @@ section {
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
   color: #fff;
-  background: #5969f3;
+  background: #000000;
 }
 
 .navbar .dropdown ul {
@@ -362,7 +363,7 @@ section {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #012970;
+  color: #fff;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -473,7 +474,7 @@ section {
 .hero {
   width: 100%;
   height: 100vh;
-  background: url(../img/hero-bg.png) top center no-repeat;
+  background: url(../img/) top center no-repeat;
   background-size: cover;
 }
 
@@ -481,7 +482,7 @@ section {
   margin: 0;
   font-size: 48px;
   font-weight: 700;
-  color: #012970;
+  color: #000;
 }
 
 .hero h2 {
@@ -497,8 +498,8 @@ section {
   border-radius: 4px;
   transition: 0.5s;
   color: #fff;
-  background: #4154f1;
-  box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
+  background: #f27b0b;
+  box-shadow: 0px 5px 30px rgba(225, 123, 7, 0.4);
 }
 
 .hero .btn-get-started span {
@@ -576,14 +577,14 @@ section {
 .about h3 {
   font-size: 14px;
   font-weight: 700;
-  color: #4154f1;
+  color: #f27b0b;
   text-transform: uppercase;
 }
 
 .about h2 {
   font-size: 24px;
   font-weight: 700;
-  color: #012970;
+  color: #000;
 }
 
 .about p {
@@ -597,7 +598,7 @@ section {
   border-radius: 4px;
   transition: 0.5s;
   color: #fff;
-  background: #4154f1;
+  background: #000;
   box-shadow: 0px 5px 25px rgba(65, 84, 241, 0.3);
 }
 
@@ -637,7 +638,7 @@ section {
 
 .values .box h3 {
   font-size: 24px;
-  color: #012970;
+  color: #000;
   font-weight: 700;
   margin-bottom: 18px;
 }
@@ -699,7 +700,7 @@ section {
 
 .features .feature-box h3 {
   font-size: 18px;
-  color: #012970;
+  color: #000;
   font-weight: 700;
   margin: 0;
 }
@@ -715,7 +716,7 @@ section {
 }
 
 .features .feature-box:hover i {
-  background: #4154f1;
+  background: #f27b0b;
   color: #fff;
 }
 
@@ -729,10 +730,22 @@ section {
   font-size: 32px;
   margin-bottom: 10px;
 }
+.parent{
+  text-align: center;
+  align-content: center;
+}
+.parent img{
+  width: 200px;
+  margin: 2px 550px 2px;
+}
 
 @media (max-width: 768px) {
   .features .feture-tabs h3 {
     font-size: 28px;
+  }
+  .parent img{
+    width: 200px;
+    margin: 2px 85px 2px;
   }
 }
 
@@ -1627,12 +1640,12 @@ section {
 .contact .info-box i {
   font-size: 38px;
   line-height: 0;
-  color: #4154f1;
+  color: #f27b0b;
 }
 
 .contact .info-box h3 {
   font-size: 20px;
-  color: #012970;
+  color: #000;
   font-weight: 700;
   margin: 20px 0 10px 0;
 }
@@ -1700,7 +1713,7 @@ section {
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-  border-color: #4154f1;
+  border-color: #f27b0b;
 }
 
 .contact .php-email-form input[type=text],
@@ -1713,7 +1726,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #4154f1;
+  background: #f27b0b;
   border: 0;
   padding: 10px 30px;
   color: #fff;
@@ -1722,7 +1735,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #5969f3;
+  background: #000;
 }
 
 @keyframes animate-loading {
@@ -2349,20 +2362,20 @@ section {
 .footer .footer-top .social-links a {
   font-size: 20px;
   display: inline-block;
-  color: rgba(1, 41, 112, 0.5);
+  color: rgba(0, 0, 0, 0.5);
   line-height: 0;
   margin-right: 10px;
   transition: 0.3s;
 }
 
 .footer .footer-top .social-links a:hover {
-  color: #012970;
+  color: #f27b0b;
 }
 
 .footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #012970;
+  color: #f27b0b;
   text-transform: uppercase;
   position: relative;
   padding-bottom: 12px;
@@ -2396,14 +2409,14 @@ section {
 }
 
 .footer .footer-top .footer-links ul a {
-  color: #013289;
+  color: #000;
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
 }
 
 .footer .footer-top .footer-links ul a:hover {
-  color: #4154f1;
+  color: #f68c09;
 }
 
 .footer .footer-top .footer-contact p {
@@ -2413,12 +2426,12 @@ section {
 .footer .copyright {
   text-align: center;
   padding-top: 30px;
-  color: #012970;
+  color: #000;
 }
 
 .footer .credits {
   padding-top: 10px;
   text-align: center;
   font-size: 13px;
-  color: #012970;
+  color: #000;
 }
