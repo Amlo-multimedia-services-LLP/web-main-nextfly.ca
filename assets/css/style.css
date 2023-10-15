@@ -735,7 +735,7 @@ section {
   align-content: center;
 }
 .parent img{
-  width: 200px;
+  width: 130px;
   margin: 2px 550px 2px;
 }
 
@@ -744,7 +744,7 @@ section {
     font-size: 28px;
   }
   .parent img{
-    width: 200px;
+    width: 130px;
     margin: 2px 55px 2px;
   }
 }
