@@ -736,7 +736,7 @@ section {
 }
 .parent img{
   width: 130px;
-  margin: 2px 550px 2px;
+  margin: 2px 450px 2px;
 }
 
 @media (max-width: 768px) {
@@ -745,7 +745,7 @@ section {
   }
   .parent img{
     width: 130px;
-    margin: 2px 55px 2px;
+    margin: 2px 75px 2px;
   }
 }
 
